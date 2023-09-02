@@ -4,7 +4,7 @@ TrabalhoFinalArquiteturaBackendGraphQL
 
 Query GraphQL para inserir uma enquete:
 
-mutation Mutation($enqueteNomeInsert: String) {
+'''mutation Mutation($enqueteNomeInsert: String) {
   addEnquete(enqueteNomeInsert: "testeNovaEnquete") {
     enqueteId
     enqueteNome
@@ -12,7 +12,7 @@ mutation Mutation($enqueteNomeInsert: String) {
     enqueteQuantVotosSim
   }
 }
-
+'''
 Query GraphQL para recuperar todas as enquetes:
 
 query Query {
