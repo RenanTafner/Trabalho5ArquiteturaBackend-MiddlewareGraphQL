@@ -4,7 +4,8 @@ TrabalhoFinalArquiteturaBackendGraphQL
 
 Query GraphQL para inserir uma enquete:
 
-'''mutation Mutation($enqueteNomeInsert: String) {
+```
+mutation Mutation($enqueteNomeInsert: String) {
   addEnquete(enqueteNomeInsert: "testeNovaEnquete") {
     enqueteId
     enqueteNome
@@ -12,9 +13,11 @@ Query GraphQL para inserir uma enquete:
     enqueteQuantVotosSim
   }
 }
-'''
+```
+
 Query GraphQL para recuperar todas as enquetes:
 
+```
 query Query {
   enquetes {
     enqueteId
@@ -23,10 +26,11 @@ query Query {
     enqueteQuantVotosSim
   }
 }
-
+```
 
 QUery GraphQL para recuperar uma enquete específica:
 
+```
 query Query($idEnquete: String) {
   enquete(idEnquete: "1") {
     enqueteId
@@ -35,9 +39,11 @@ query Query($idEnquete: String) {
     enqueteQuantVotosSim
   }
 }
+```
 
 Query para votar sim pra enquete:
 
+```
 mutation VoteEnquete($idEnquete: String) {
   voteEnqueteSim(idEnquete: "1") {
     enqueteId
@@ -46,9 +52,11 @@ mutation VoteEnquete($idEnquete: String) {
     enqueteQuantVotosNao
   }
 }
+```
 
 Query para votar nao pra enquete:
 
+```
 mutation VoteEnquete($idEnquete: String) {
   voteEnqueteNao(idEnquete: "1") {
     enqueteId
@@ -57,3 +65,4 @@ mutation VoteEnquete($idEnquete: String) {
     enqueteQuantVotosNao
   }
 }
+```
