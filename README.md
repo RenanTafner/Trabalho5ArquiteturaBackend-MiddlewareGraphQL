@@ -22,6 +22,7 @@ mutation Mutation($enqueteNomeInsert: String) {
   }
 }
 ```
+Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
 
 Query GraphQL para recuperar todas as enquetes:
 
@@ -49,7 +50,9 @@ query Query($idEnquete: String) {
 }
 ```
 
-Query para votar sim pra enquete:
+Onde "1" é o ID da enquete que se quer recuperar.
+
+Query para votar "Sim" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
@@ -62,7 +65,9 @@ mutation VoteEnquete($idEnquete: String) {
 }
 ```
 
-Query para votar nao pra enquete:
+Onde "1" é o ID da enquete que se quer votar "Sim".
+
+Query para votar "Não" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
@@ -74,3 +79,4 @@ mutation VoteEnquete($idEnquete: String) {
   }
 }
 ```
+Onde "1" é o ID da enquete que se quer votar "Não".
