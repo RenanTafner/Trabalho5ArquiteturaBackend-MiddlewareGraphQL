@@ -37,7 +37,7 @@ query Query {
 }
 ```
 
-QUery GraphQL para recuperar uma enquete específica:
+Query GraphQL para recuperar uma enquete específica:
 
 ```
 query Query($idEnquete: String) {
@@ -52,7 +52,7 @@ query Query($idEnquete: String) {
 
 Onde "1" é o ID da enquete que se quer recuperar.
 
-Query para votar "Sim" para enquete:
+Query GraphQL para votar "Sim" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
@@ -67,7 +67,7 @@ mutation VoteEnquete($idEnquete: String) {
 
 Onde "1" é o ID da enquete que se quer votar "Sim".
 
-Query para votar "Não" para enquete:
+Query GraphQL para votar "Não" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
