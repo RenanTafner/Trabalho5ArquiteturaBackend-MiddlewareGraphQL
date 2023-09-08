@@ -14,7 +14,15 @@ Parar rodar, basta rodar o comando "npm install" e depois "node index.js", ambos
 
 ## Queries GraphQL
 
-Query GraphQL para recuperar todas as enquetes:
+### enquete : [Enquete]
+
+Query GraphQL para recuperar todas as enquetes.
+
+#### Parâmetros:
+
+N/A
+
+#### Exemplo:
 
 ```
 query Query {
@@ -27,7 +35,15 @@ query Query {
 }
 ```
 
-Query GraphQL para recuperar uma enquete específica:
+### enquete : Enquete
+
+Query GraphQL para recuperar uma enquete específica.
+
+#### Parâmetros:
+
+idEnquete: String
+
+#### Exemplo:
 
 ```
 query Query($idEnquete: String) {
@@ -44,7 +60,15 @@ Onde "1" é o ID da enquete que se quer recuperar.
 
 ## Mutations Grahpql
 
-Mutation GraphQL para inserir uma enquete:
+### addEnquete : Enquete
+
+Mutation GraphQL para inserir uma enquete.
+
+#### Parâmetros:
+
+enqueteNomeInsert : String
+
+#### Exemplo:
 
 ```
 mutation Mutation($enqueteNomeInsert: String) {
@@ -58,7 +82,15 @@ mutation Mutation($enqueteNomeInsert: String) {
 ```
 Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
 
-Mutation GraphQL para votar "Sim" para enquete:
+### voteEnqueteSim : Enquete
+
+Mutation GraphQL para votar "Sim" para enquete.
+
+#### Parâmetros:
+
+idEnquete : String
+
+#### Exemplo:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
@@ -73,7 +105,15 @@ mutation VoteEnquete($idEnquete: String) {
 
 Onde "1" é o ID da enquete que se quer votar "Sim".
 
-Mutation GraphQL para votar "Não" para enquete:
+### voteEnqueteNao : Enquete
+
+Mutation GraphQL para votar "Não" para enquete.
+
+#### Parâmetros:
+
+idEnquete : String
+
+#### Exemplo:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
