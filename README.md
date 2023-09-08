@@ -14,20 +14,6 @@ Parar rodar, basta rodar o comando "npm install" e depois "node index.js", ambos
 
 ## Queries GraphQL
 
-Query GraphQL para inserir uma enquete:
-
-```
-mutation Mutation($enqueteNomeInsert: String) {
-  addEnquete(enqueteNomeInsert: "testeNovaEnquete") {
-    enqueteId
-    enqueteNome
-    enqueteQuantVotosNao
-    enqueteQuantVotosSim
-  }
-}
-```
-Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
-
 Query GraphQL para recuperar todas as enquetes:
 
 ```
@@ -56,7 +42,23 @@ query Query($idEnquete: String) {
 
 Onde "1" é o ID da enquete que se quer recuperar.
 
-Query GraphQL para votar "Sim" para enquete:
+## Mutations Grahpql
+
+Mutation GraphQL para inserir uma enquete:
+
+```
+mutation Mutation($enqueteNomeInsert: String) {
+  addEnquete(enqueteNomeInsert: "testeNovaEnquete") {
+    enqueteId
+    enqueteNome
+    enqueteQuantVotosNao
+    enqueteQuantVotosSim
+  }
+}
+```
+Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
+
+Mutation GraphQL para votar "Sim" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
@@ -71,7 +73,7 @@ mutation VoteEnquete($idEnquete: String) {
 
 Onde "1" é o ID da enquete que se quer votar "Sim".
 
-Query GraphQL para votar "Não" para enquete:
+Mutation GraphQL para votar "Não" para enquete:
 
 ```
 mutation VoteEnquete($idEnquete: String) {
