@@ -12,6 +12,10 @@
 
 Parar rodar, basta rodar o comando "npm install" e depois "node index.js", ambos na pasta raíz do projeto.
 
+## Observação
+
+Todas as queries e mutations exemplificadas neste documento foram testadas usando o servidor Apollo Server para GraphQL em Node Js.
+
 ## Queries GraphQL
 
 ### enquete : [Enquete]
