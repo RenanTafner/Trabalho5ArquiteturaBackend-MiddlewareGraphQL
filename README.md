@@ -80,6 +80,7 @@ mutation Mutation($enqueteNomeInsert: String) {
   }
 }
 ```
+
 Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
 
 ### voteEnqueteSim : Enquete
@@ -125,4 +126,5 @@ mutation VoteEnquete($idEnquete: String) {
   }
 }
 ```
+
 Onde "1" é o ID da enquete que se quer votar "Não".
