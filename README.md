@@ -26,6 +26,10 @@ Query GraphQL para recuperar todas as enquetes.
 
 N/A
 
+#### Retorno:
+
+Um array de enquetes.
+
 #### Exemplo:
 
 ```
@@ -46,6 +50,10 @@ Query GraphQL para recuperar uma enquete específica.
 #### Parâmetros:
 
 idEnquete: String
+
+#### Retorno:
+
+Uma enquete específica.
 
 #### Exemplo:
 
@@ -72,6 +80,10 @@ Mutation GraphQL para inserir uma enquete.
 
 enqueteNomeInsert : String
 
+#### Retorno:
+
+A enquete inserida.
+
 #### Exemplo:
 
 ```
@@ -95,6 +107,10 @@ Mutation GraphQL para votar "Sim" para enquete.
 
 idEnquete : String
 
+#### Retorno:
+
+A enquete em que se votou "Sim".
+
 #### Exemplo:
 
 ```
@@ -117,6 +133,10 @@ Mutation GraphQL para votar "Não" para enquete.
 #### Parâmetros:
 
 idEnquete : String
+
+#### Retorno:
+
+A enquete em que se votou "Não".
 
 #### Exemplo:
 
