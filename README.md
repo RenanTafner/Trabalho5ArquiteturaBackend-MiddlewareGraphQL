@@ -49,7 +49,7 @@ Query GraphQL para recuperar uma enquete específica.
 
 #### Parâmetros:
 
-idEnquete: String
+idEnquete: String -> ID da enquete que se quer recuperar.
 
 #### Retorno:
 
@@ -78,7 +78,7 @@ Mutation GraphQL para inserir uma enquete.
 
 #### Parâmetros:
 
-enqueteNomeInsert : String
+enqueteNomeInsert : String -> Nome/pergunta da enquete que se quer inserir.
 
 #### Retorno:
 
@@ -105,7 +105,7 @@ Mutation GraphQL para votar "Sim" para enquete.
 
 #### Parâmetros:
 
-idEnquete : String
+idEnquete : String -> ID da enquete que se quer votar "Sim".
 
 #### Retorno:
 
@@ -132,7 +132,7 @@ Mutation GraphQL para votar "Não" para enquete.
 
 #### Parâmetros:
 
-idEnquete : String
+idEnquete : String ID da enquete que se quer votar "Não".
 
 #### Retorno:
 
