@@ -28,7 +28,7 @@ N/A
 
 #### Retorno:
 
-Um array de enquetes.
+Um array de enquetes com seus respectivos dados.
 
 #### Exemplo:
 
@@ -53,7 +53,7 @@ idEnquete: String
 
 #### Retorno:
 
-Uma enquete específica.
+Uma enquete específica com seus respectivos dados.
 
 #### Exemplo:
 
@@ -82,7 +82,7 @@ enqueteNomeInsert : String
 
 #### Retorno:
 
-A enquete inserida.
+A enquete inserida com seus respectivos dados.
 
 #### Exemplo:
 
@@ -109,7 +109,7 @@ idEnquete : String
 
 #### Retorno:
 
-A enquete em que se votou "Sim".
+A enquete em que se votou "Sim" com seus respectivos dados.
 
 #### Exemplo:
 
@@ -136,7 +136,7 @@ idEnquete : String
 
 #### Retorno:
 
-A enquete em que se votou "Não".
+A enquete em que se votou "Não" com seus respectivos dados.
 
 #### Exemplo:
 
