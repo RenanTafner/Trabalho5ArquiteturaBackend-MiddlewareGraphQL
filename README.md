@@ -97,7 +97,7 @@ mutation Mutation($enqueteNomeInsert: String) {
 }
 ```
 
-Onde "testeNovaEnquete" é o nome da enquete que se quer inserir.
+Onde "testeNovaEnquete" é o nome/pergunta da enquete que se quer inserir.
 
 ### voteEnqueteSim : Enquete
 
