@@ -101,7 +101,7 @@ Onde "testeNovaEnquete" é o nome/pergunta da enquete que se quer inserir.
 
 ### voteEnqueteSim : Enquete
 
-Mutation GraphQL para votar "Sim" para enquete.
+Mutation GraphQL para votar "Sim" para uma enquete.
 
 #### Parâmetros:
 
@@ -128,11 +128,11 @@ Onde "1" é o ID da enquete que se quer votar "Sim".
 
 ### voteEnqueteNao : Enquete
 
-Mutation GraphQL para votar "Não" para enquete.
+Mutation GraphQL para votar "Não" para uma enquete.
 
 #### Parâmetros:
 
-idEnquete : String ID da enquete que se quer votar "Não".
+idEnquete : String -> ID da enquete que se quer votar "Não".
 
 #### Retorno:
 
